@@ -8,7 +8,7 @@ const Onboarding3 = () => {
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => router.replace('/home')} style={styles.skipButton}>
+            <TouchableOpacity onPress={() => router.replace('/(tabs)/home')} style={styles.skipButton}>
                 <Text style={styles.skipText}>Skip</Text>
             </TouchableOpacity>
 
@@ -34,7 +34,7 @@ const Onboarding3 = () => {
                     <View style={[styles.dot, styles.activeDot]} />
                 </View>
 
-                <TouchableOpacity onPress={() => router.replace('/home')} style={styles.button}>
+                <TouchableOpacity onPress={() => router.replace('/(tabs)/home')} style={styles.button}>
                     <Text style={styles.buttonText}>Get Started</Text>
                 </TouchableOpacity>
             </View>
