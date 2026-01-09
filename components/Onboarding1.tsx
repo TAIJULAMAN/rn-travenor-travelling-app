@@ -8,7 +8,7 @@ const Onboarding1 = () => {
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => router.replace('/home')} style={styles.skipButton}>
+            <TouchableOpacity onPress={() => router.replace('/(tabs)/home')} style={styles.skipButton}>
                 <Text style={styles.skipText}>Skip</Text>
             </TouchableOpacity>
 
