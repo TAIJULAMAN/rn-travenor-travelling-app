@@ -42,7 +42,6 @@ export default function PopularPlaces() {
 
     return (
         <View style={styles.container}>
-            {/* Popular Places Section */}
             <View style={styles.sectionHeader}>
                 <Text style={styles.sectionTitle}>Best Places</Text>
                 <TouchableOpacity onPress={() => router.push('/(tabs)/destination')}>
@@ -68,7 +67,7 @@ export default function PopularPlaces() {
                                     style={styles.popularImage}
                                 />
                                 <TouchableOpacity style={styles.favoriteButton}>
-                                    <Ionicons name="heart-outline" size={20} color="#FFFFFF" />
+                                    <Ionicons name="bookmark-outline" size={20} color="#FFFFFF" />
                                 </TouchableOpacity>
                             </View>
                             <View style={styles.popularCardContent}>
