@@ -26,7 +26,7 @@ const menuItems = [
         title: 'Logout',
         icon: 'log-out-outline',
         route: '/logout',
-    },
+    }
 ];
 
 export default function ProfileScreen() {
@@ -93,8 +93,7 @@ export default function ProfileScreen() {
                             ]}
                             onPress={() => {
                                 if (item.title === 'Logout') {
-                                    // Show logout confirmation
-                                    console.log('Logout');
+                                    router.push('/sign-in');
                                 } else {
                                     router.push(item.route as any);
                                 }
