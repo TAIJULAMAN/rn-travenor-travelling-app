@@ -11,7 +11,6 @@ const Onboarding3 = () => {
             <TouchableOpacity onPress={() => router.replace('/(tabs)/home')} style={styles.skipButton}>
                 <Text style={styles.skipText}>Skip</Text>
             </TouchableOpacity>
-
             <Image
                 source={require('../assets/onboarding/a3.png')}
                 style={styles.image}
@@ -26,7 +25,6 @@ const Onboarding3 = () => {
                     To get the best of your adventure you just need to leave and go where you like. we are waiting for you
                 </Text>
             </View>
-
             <View style={styles.footer}>
                 <View style={styles.paginatorContainer}>
                     <View style={styles.dot} />

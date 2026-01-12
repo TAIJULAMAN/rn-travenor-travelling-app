@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function CalendarScreen() {
+export default function DestinationScreen() {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Calendar Screen</Text>
+            <Text style={styles.text}>Destination Screen</Text>
         </View>
     );
 }
