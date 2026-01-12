@@ -19,13 +19,29 @@ const popularPlaces = [
         price: 894,
         image: require('../assets/popular/popular2.png'),
     },
+    {
+        id: 3,
+        name: 'Niladri Reservoir',
+        location: 'Tekergat, Sunamgnj',
+        rating: 4.7,
+        price: 459,
+        image: require('../assets/popular/p1.png'),
+    },
+    {
+        id: 4,
+        name: 'Casa Las Tirtugas',
+        location: 'Av Damero, Mexico',
+        rating: 4.8,
+        price: 894,
+        image: require('../assets/popular/p2.png'),
+    },
 ];
 
 export default function PopularPlaces() {
     const router = useRouter();
 
     return (
-        <>
+        <View style={styles.container}>
             {/* Popular Places Section */}
             <View style={styles.sectionHeader}>
                 <Text style={styles.sectionTitle}>Best Places</Text>
@@ -73,11 +89,14 @@ export default function PopularPlaces() {
                     ))}
                 </View>
             </ScrollView>
-        </>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
+    container: {
+        marginTop: 20,
+    },
     sectionHeader: {
         flexDirection: 'row',
         justifyContent: 'space-between',
