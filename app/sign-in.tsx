@@ -84,7 +84,10 @@ export default function SignInScreen() {
                     </TouchableOpacity>
 
                     {/* Sign In Button */}
-                    <TouchableOpacity style={styles.signInButton}>
+                    <TouchableOpacity
+                        style={styles.signInButton}
+                        onPress={() => router.push('/(tabs)/home')}
+                    >
                         <Text style={styles.signInButtonText}>Sign In</Text>
                     </TouchableOpacity>
 

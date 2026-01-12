@@ -61,6 +61,7 @@ export default function BestDestination() {
                     <TouchableOpacity
                         key={destination.id}
                         style={styles.destinationCard}
+                        onPress={() => router.push('/destination-details')}
                     >
                         <Image
                             source={destination.image}

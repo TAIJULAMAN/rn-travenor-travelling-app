@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -62,6 +63,7 @@ const allDestinations = [
 const categories = ['All', 'Popular', 'Recommended', 'Most Viewed'];
 
 export default function DestinationScreen() {
+    const router = useRouter();
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -140,6 +142,7 @@ export default function DestinationScreen() {
                         <TouchableOpacity
                             key={destination.id}
                             style={styles.destinationCard}
+                            onPress={() => router.push('/destination-details')}
                         >
                             <Image
                                 source={destination.image}
